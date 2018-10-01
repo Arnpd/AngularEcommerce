@@ -5,9 +5,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
-
+.box-frame{
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    text-align: center;
+    border: 3px solid white;
+    display: block;
+}
 
 
 .two-tile {
@@ -33,9 +38,15 @@
 
 .box-text {
 color: white;
-  font-size: 4rem;
-  font-weight:900;
-  
+    font-size: 4rem;
+    font-weight:900;
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
 }
 mat-grid-tile {
   cursor: pointer;

@@ -1,32 +1,8 @@
 
 <mat-grid-list cols="4" rowHeight="200px" gutterSize="15">
   <mat-grid-tile *ngFor="let tile of tiles; let i = index" [colspan]="tile.cols" [rowspan]="tile.rows" [ngClass]="tile.class" [routerLink]="['product',tile.id]">
-    <div class="box-text" >{{tile.text}}</div>
-  </mat-grid-tile>
-  <!-- <mat-grid-tile colspan="2" rowspan="2" class="one-tile">
-    <div>
-      <h3 class="box-text">One</h3>
+    <div class="box-frame">
+        <div class="box-text" >{{tile.text}}</div>
     </div>
   </mat-grid-tile>
-  <mat-grid-tile colspan="1" rowspan="1" class="two-tile">
-    <div class="box-text" [routerLink]="['product', 1]">two</div>
-  </mat-grid-tile>
-  <mat-grid-tile colspan="1" rowspan="2" class="three-tile">
-    three
-  </mat-grid-tile>
-  <mat-grid-tile colspan="1" rowspan="2" class="four-tile">
-    four
-  </mat-grid-tile>
-  <mat-grid-tile colspan="2" rowspan="1" class="five-tile">
-    five
-  </mat-grid-tile>
-  <mat-grid-tile colspan="1" rowspan="1" class="six-tile">
-    six
-  </mat-grid-tile> -->
-
-
-
-
-
-
 </mat-grid-list>
